@@ -3,7 +3,6 @@ package com.nextBase.step_definitions;
 import com.github.javafaker.Business;
 import com.github.javafaker.Faker;
 import com.nextBase.pages.AppreciationPage;
-import com.nextBase.pages.BasePage;
 import com.nextBase.utilities.BrowserUtils;
 import com.nextBase.utilities.ConfigurationReader;
 import com.nextBase.utilities.Driver;
@@ -101,16 +100,5 @@ public class Negative_Appreciation_StepDefinitions {
 
     }
 
-    //-----------5th Scenario : QUOTE------------//
 
-    @And("user passes random characters")
-    public void userPassesRandomCharacters() {
-        appreciationPage.quoteInputBar.sendKeys("skjdfhkh");
-        appreciationPage.sendButton.click();
-    }
-
-    @Then("user should not be able to send random characters")
-    public void userShouldNotBeAbleToSendRandomCharacters() {
-
-    }
 }
